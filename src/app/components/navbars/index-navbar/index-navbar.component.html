@@ -1,0 +1,138 @@
+<nav
+  class="
+    top-0
+    fixed
+    z-50
+    w-full
+    flex flex-wrap
+    items-center
+    justify-between
+    px-2
+    py-3
+    navbar-expand-lg
+    bg-white
+    shadow
+  "
+>
+  <div
+    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+  >
+    <div
+      class="lg:flex flex-grow items-center"
+      [ngClass]="{ hidden: !navbarOpen, block: navbarOpen }"
+      id="example-navbar-warning"
+    >
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <li class="flex items-center">
+          <a
+            [routerLink]="['/auth/login']"
+            class="
+            text-blueGray-700
+            px-3
+            py-2
+            flex
+            items-center
+            text-xs
+            uppercase
+            font-bold
+          "
+          type="button"
+        >
+          <i class=""></i> Login
+          </a>
+        </li>
+
+        <li class="flex items-center">
+          <a
+            class="
+              hover:text-blueGray-500
+              text-blueGray-700
+              px-3
+              py-2
+              flex
+              items-center
+              text-xs
+              uppercase
+              font-bold
+            "
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <i
+              class="hover:text-blueGray-400 fab fa-facebook text-lg leading-lg"
+            ></i>
+          </a>
+        </li>
+
+        <li class="flex items-center">
+          <a
+            class="
+              hover:text-blueGray-500
+              text-blueGray-700
+              px-3
+              py-2
+              flex
+              items-center
+              text-xs
+              uppercase
+              font-bold
+            "
+            href="https://instagram.com"
+            target="_blank"
+          >
+            <i
+              class="
+                hover:text-blueGray-400
+                fab
+                fa-instagram
+                text-lg
+                leading-lg
+              "
+            ></i>
+          </a>
+        </li>
+
+        <li class="flex items-center">
+          <a
+            class="
+              hover:text-blueGray-500
+              text-blueGray-700
+              px-3
+              py-2
+              flex
+              items-center
+              text-xs
+              uppercase
+              font-bold
+            "
+            href="https://github.com"
+            target="_blank"
+          >
+            <i
+              class="hover:text-blueGray-400 fab fa-github text-lg leading-lg"
+            ></i>
+          </a>
+        </li>
+
+        <li class="flex items-center">
+          <button
+            class="
+              text-blueGray-700
+              px-3
+              py-2
+              flex
+              items-center
+              text-xs
+              uppercase
+              font-bold
+            "
+            type="button"
+          >
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCa8q0JRq3AX_Vvn-0DsEAcX80bf4GJfvfymq_t_1QrKnWBA/viewform?usp=sf_link">Contact Us
+          </a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
